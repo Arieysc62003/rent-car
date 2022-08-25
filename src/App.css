@@ -1,0 +1,10 @@
+.header {
+  text-align: center;
+}
+.card {
+  border: 2px black solid;
+  width: 20%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
