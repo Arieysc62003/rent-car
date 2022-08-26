@@ -1,7 +1,9 @@
 import React from "react";
-import Header from "./components/header";
-import "./App.css";
+import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
 import Home from "./Pages/Home";
+import Footer from "./components/Footer";
+import "./App.css";
 function App() {
   return (
     <div>
@@ -12,7 +14,9 @@ function App() {
         {/* I need to create a component that will move me between the pages when clicked */}
         <Home />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
