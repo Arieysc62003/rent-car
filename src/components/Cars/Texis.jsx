@@ -6,7 +6,7 @@ let all = [
   {
     id: 1,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -14,7 +14,7 @@ let all = [
   {
     id: 2,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -22,7 +22,7 @@ let all = [
   {
     id: 3,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -30,7 +30,7 @@ let all = [
   {
     id: 4,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -38,7 +38,7 @@ let all = [
   {
     id: 5,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -46,7 +46,7 @@ let all = [
   {
     id: 6,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -54,7 +54,7 @@ let all = [
   {
     id: 7,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -62,7 +62,7 @@ let all = [
   {
     id: 8,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/Israeli_Taxi.JPG",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -75,7 +75,7 @@ const container = {
   justifyContent: "space-evenly",
 };
 
-const Cars = () => {
+const Taxis = () => {
   const [cars, setCars] = useState(all);
 
   return (
@@ -87,4 +87,4 @@ const Cars = () => {
   );
 };
 
-export default Cars;
+export default Taxis;

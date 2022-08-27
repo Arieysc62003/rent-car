@@ -11,7 +11,7 @@ const CONTAINER = {
   paddingTop: "0",
 };
 
-const CarSingle = ({ car }) => (
+const CardSingle = ({ car }) => (
   <div style={CONTAINER}>
     <img src={car.img} alt="jeep" width={"100%"} />
     <p>{car.model}</p>
@@ -20,4 +20,4 @@ const CarSingle = ({ car }) => (
     <p>{car.pricePerDay}</p>
   </div>
 );
-export default CarSingle;
+export default CardSingle;
