@@ -6,7 +6,7 @@ let all = [
   {
     id: 1,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/aaa.jpg",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -22,7 +22,7 @@ let all = [
   {
     id: 3,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/aaa.jpg",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",
@@ -38,7 +38,7 @@ let all = [
   {
     id: 5,
     model: " model: Mazda3",
-    img: "pictures/Jeep.jpg",
+    img: "pictures/aaa.jpg",
     year: "year: 2018",
     engine: " engine: 2000cc torbo",
     pricePerDay: "price Per Day :150$ ",

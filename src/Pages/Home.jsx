@@ -6,8 +6,8 @@ import Taxis from "../components/Cars/Texis";
 const Home = () => {
   return (
     <div>
-      {/* <Cars /> */}
-      <Luxury />
+      <Cars />
+      {/* <Luxury /> */}
       {/* <Taxis /> */}
     </div>
   );

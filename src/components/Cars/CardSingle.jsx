@@ -13,7 +13,7 @@ const CONTAINER = {
 
 const CardSingle = ({ car }) => (
   <div style={CONTAINER}>
-    <img src={car.img} alt="jeep" width={"100%"} />
+    <img src={car.img} alt="jeep" width="100%" />
     <p>{car.model}</p>
     <p>{car.year}</p>
     <p>{car.engine}</p>
