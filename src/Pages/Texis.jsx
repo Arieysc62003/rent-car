@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import CardSingle from "./cardSingle";
+import CardSingle from "../components/CardSingle";
 
 let all = [
   {
