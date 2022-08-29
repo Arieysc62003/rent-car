@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 const Sfooter = {
   // display: "block",
-  position: "sticky",
+  // position: "sticky",
   bottom: "0",
   width: "100%",
   textAlign: "center",
