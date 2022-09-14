@@ -5,6 +5,9 @@
 }
 body {
   background-color: rgba(211, 216, 219, 0.341);
+  /* background: url("/public/pictures/front-left-side-47.jpg"); */
+  /* width: 100%; */
+  /* background-image: url("/public/pictures/tata-harrier-side.webp"); */
 }
 .header {
   padding-bottom: 10px;

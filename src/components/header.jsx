@@ -8,9 +8,9 @@ function Header(props) {
       <h1 className="header">Car rental center</h1>
       <Navigation
         link={[
-          { route: "/", name: "Cars" },
-          { route: "/Luxury", name: "Luxury" },
-          { route: "/Taxis", name: "Taxis" },
+          { route: "/Cars", name: "Cars" },
+          // { route: "/Luxury", name: "Luxury" },
+          // { route: "/Taxis", name: "Taxis" },
         ]}
       />
     </>
