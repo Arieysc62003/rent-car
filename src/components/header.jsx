@@ -5,12 +5,10 @@ import Navigation from "./Navigation";
 function Header(props) {
   return (
     <>
-      <h1 className="header">Car rental center</h1>
       <Navigation
         link={[
+          { route: "/Overtrue", name: "Opening page" },
           { route: "/Cars", name: "Cars" },
-          // { route: "/Luxury", name: "Luxury" },
-          // { route: "/Taxis", name: "Taxis" },
         ]}
       />
     </>

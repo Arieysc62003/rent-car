@@ -14,3 +14,18 @@ body {
   text-align: center;
   color: rgb(73, 148, 210);
 }
+.imgPage {
+  width: 40%;
+}
+.link {
+  color: black;
+}
+.addcar {
+  background-color: rgb(6, 190, 246);
+  color: bluck;
+  border: 2px black solid;
+  width: 18%;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+}

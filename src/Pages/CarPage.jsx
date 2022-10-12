@@ -16,18 +16,48 @@ const section = {
 };
 
 const CarPage = () => {
+  const [bid, setBid] = useState({
+    number: "",
+  });
   const [cars, setCars] = useState(data);
   const { id } = useParams();
   const findID = cars.find((car) => car.id === id);
 
+  const handlechange = (e) => {
+    setBid({ ...bid, number: e.target.value });
+  };
+
+  const handleSubmit = () => {
+    localStorage.setItem("your bid of", bid.number);
+  };
   return (
-    <div style={CONTAINER}>
-      <img src={findID.img} alt="qqq" width="100%" height="50%" />
-      <h1>{findID.model}</h1>
-      <p style={section}>{findID.year}</p>
-      <p style={section}>{findID.engine}</p>
-      <p style={section}>{findID.pricePerDay}</p>
-    </div>
+    <for>
+      <h1 className="header">Car rental center</h1>
+      <div style={CONTAINER}>
+        <img
+          className="imgPage"
+          src={findID.img}
+          alt="qqq"
+          width="100%"
+          height="50%"
+        />
+        <h1>{findID.model}</h1>
+        <p style={section}>{findID.year}</p>
+        <p style={section}>{findID.engine}</p>
+        <p style={section}>{findID.pricePerDay}</p>
+        <label for="bid">Your bid:</label>
+        <input
+          type="text"
+          id="bid"
+          name="bid"
+          onChange={handlechange}
+          value={bid.number}
+        />
+        <button id="submit" onClick={handleSubmit}>
+          submit
+        </button>
+      </div>
+    </for>
   );
 };
 

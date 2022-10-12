@@ -8,13 +8,15 @@ function Navigation({ link }) {
     <ul>
       {link.map((l, i) => {
         return (
-          <NavLink
-            key={i}
-            to={l.route}
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            {l.name}
-          </NavLink>
+          <div className="link">
+            <NavLink
+              key={i}
+              to={l.route}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {l.name}
+            </NavLink>
+          </div>
         );
       })}
     </ul>
