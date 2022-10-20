@@ -6,19 +6,16 @@ import Header from "./Header";
 function Navigation({ link }) {
   return (
     <ul>
-      {link.map((l, i) => {
-        return (
-          <div className="link">
-            <NavLink
-              key={i}
-              to={l.route}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              {l.name}
-            </NavLink>
-          </div>
-        );
-      })}
+      {link.map((l, i) => (
+        <div className="link" key={i}>
+          <NavLink
+            to={l.route}
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            {l.name}
+          </NavLink>
+        </div>
+      ))}
     </ul>
   );
 }

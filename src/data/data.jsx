@@ -1,3 +1,7 @@
+import { useState } from "react";
+import React, { Component } from "react";
+import CardSingle from "../components/CardSingle";
+
 const data = [
   {
     id: "1",

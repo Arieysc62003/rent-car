@@ -29,3 +29,44 @@ body {
   margin: 15px;
   padding: 20px;
 }
+
+.FooterWrapper {
+  background-color: #333;
+  padding: 2.5rem;
+}
+.FooterContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+.FooterTitle {
+  font-size: 1.4rem;
+  font-weight: 450;
+  color: rgb(5, 141, 252);
+}
+.FooterLinkTitle {
+  color: rgb(73, 148, 210);
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+
+.FooterLinks {
+  margin-top: 1rem;
+}
+.FooterLink {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.SocialLinks {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+svg {
+  fill: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}

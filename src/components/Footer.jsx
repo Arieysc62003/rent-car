@@ -1,19 +1,51 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BsFacebook, BsYoutube } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 
-const Sfooter = {
-  // display: "block",
-  position: "fixed",
-  bottom: "0",
-  width: "100%",
-  textAlign: "center",
-  backgroundColor: "rgba(148, 184, 214, 0.532)",
-  padding: "20px",
-};
 const Footer = (props) => {
   return (
-    <footer style={Sfooter}>
-      <p>all rights reserved to Arie </p>
+    <footer className="FooterWrapper">
+      <div className="FooterTitle">Rent Car </div>
+
+      <div className="FooterContainer">
+        <div>
+          <div className="FooterLinkTitle">Product</div>
+          <ul>
+            <li className="FooterLinks">
+              <div className="FooterLink">Dowload</div>
+            </li>
+            <li className="FooterLinks">
+              <div className="FooterLink">Status</div>
+            </li>
+            <li className="FooterLinks">
+              <div className="FooterLink">Rent car App</div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="FooterLinkTitle">Compnay</div>
+          <ul>
+            <li className="FooterLinks">
+              <div className="FooterLink">About</div>
+            </li>
+            <li className="FooterLinks">
+              <div className="FooterLink">Branding</div>
+            </li>
+            <li className="FooterLinks">
+              <div className="FooterLink">Sales</div>
+            </li>
+          </ul>
+        </div>
+        <div className="SocialLinks">
+          <BsFacebook></BsFacebook>
+          <BsInstagram></BsInstagram>
+          <BsTwitter></BsTwitter>
+          <BsYoutube></BsYoutube>
+        </div>
+      </div>
     </footer>
   );
 };
