@@ -16,7 +16,7 @@ const section = {
 };
 
 const CarPage = () => {
-  const [cars, setCars] = useState(data);
+  const [cars, setCars] = useState(JSON.parse(localStorage.getItem("cars")));
   const { id } = useParams();
   const findID = cars.find((car) => car.id === id);
 

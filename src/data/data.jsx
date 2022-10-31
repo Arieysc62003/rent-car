@@ -1,7 +1,3 @@
-import { useState } from "react";
-import React, { Component } from "react";
-import CardSingle from "../components/CardSingle";
-
 const data = [
   {
     id: "1",
@@ -63,6 +59,14 @@ const data = [
     id: "8",
     model: "Hyundai 2",
     img: "/pictures/1514.jpg",
+    year: "2018",
+    engine: "2000cc torbo",
+    pricePerDay: "150$ ",
+  },
+  {
+    id: "9",
+    model: "Mercedes AMG",
+    img: "/pictures/Mercedes.jpg",
     year: "2018",
     engine: "2000cc torbo",
     pricePerDay: "150$ ",

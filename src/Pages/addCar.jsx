@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-const EditCar = () => {
-  const [add, setAdd] = useState({
+const AddCar = () => {
+  const { id } = useParams();
+  const [addC, setAddC] = useState({
+    id: id,
     model: "",
     img: "",
     year: "",
@@ -11,51 +12,31 @@ const EditCar = () => {
     pricePerDay: "",
   });
 
-  const { id } = useParams();
-
   const handleChange = (e) => {
-    setAdd({ ...add, [e.target.name]: e.target.value });
+    setAddC({ ...addC, [e.target.name]: e.target.value });
   };
-
-  useEffect(() => {
-    const findCar = () => {
-      const find = JSON.parse(localStorage.getItem("cars")).find(
-        (car) => car.id === id
-      );
-      setAdd(find);
-    };
-    findCar();
-  }, []);
 
   let navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const update = JSON.parse(localStorage.getItem("cars")).filter(
-      (car) => car.id !== id
-    );
-    update.push(add);
-
+    if (addC.model != "") {
+      const updata = JSON.parse(localStorage.getItem("cars"));
+      updata.push(addC);
+      localStorage.setItem("cars", JSON.stringify(updata));
+    }
     navigate("/Cars");
-    // let obj = {
-    //   model: add.model,
-    //   img: add.img,
-    //   year: add.year,
-    //   engine: add.engine,
-    //   pricePerDay: add.pricePerDay,
-    // };
-    localStorage.setItem("cars", JSON.stringify(update));
   };
   return (
     <>
-      <h1 className="header"> Edit Car</h1>
+      <h1 className="header"> Add Car</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="model">Model</label>
         <input
           type="text"
           name="model"
           onChange={handleChange}
-          defaultValue={add.model}
+          value={addC.model}
         />
 
         <br />
@@ -65,7 +46,7 @@ const EditCar = () => {
           type="text"
           name="img"
           onChange={handleChange}
-          defaultValue={add.img}
+          value={addC.img}
         />
 
         <br />
@@ -75,7 +56,7 @@ const EditCar = () => {
           type="text"
           name="year"
           onChange={handleChange}
-          defaultValue={add.year}
+          value={addC.year}
         />
 
         <br />
@@ -85,7 +66,7 @@ const EditCar = () => {
           type="text"
           name="engine"
           onChange={handleChange}
-          defaultValue={add.engine}
+          value={addC.engine}
         />
 
         <br />
@@ -95,7 +76,7 @@ const EditCar = () => {
           type="text"
           name="pricePerDay"
           onChange={handleChange}
-          defaultValue={add.pricePerDay}
+          alue={addC.pricePerDay}
         />
         <br />
         <br />
@@ -105,4 +86,4 @@ const EditCar = () => {
   );
 };
 
-export default EditCar;
+export default AddCar;

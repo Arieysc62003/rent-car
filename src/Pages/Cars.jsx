@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-
 import CardSingle from "../components/CardSingle";
-import data from "../data/data";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import EditCar from "./EditCar";
 
 const container = {
   display: "flex",
@@ -18,12 +14,16 @@ const Cars = () => {
   const [cars, setCars] = useState(JSON.parse(localStorage.getItem("cars")));
   const removeCar = (id) => {
     const update = cars.filter((item) => item.id !== id);
+    localStorage.setItem("cars", JSON.stringify(update));
     setCars(update);
   };
   let navigate = useNavigate();
 
   const editCar = (id) => {
     navigate("/EditCar/" + id);
+  };
+  const addCar = (id) => {
+    navigate("/AddCar/" + id);
   };
 
   useEffect(() => {
@@ -45,6 +45,11 @@ const Cars = () => {
             editCar={editCar}
           />
         ))}
+        <div className="addcar">
+          <button className="plus" onClick={() => addCar(cars.length + 1)}>
+            +
+          </button>
+        </div>
       </div>
     </div>
   );

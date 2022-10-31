@@ -5,9 +5,6 @@
 }
 body {
   background-color: rgba(211, 216, 219, 0.341);
-  /* background: url("/public/pictures/front-left-side-47.jpg"); */
-  /* width: 100%; */
-  /* background-image: url("/public/pictures/tata-harrier-side.webp"); */
 }
 .header {
   padding-bottom: 10px;
@@ -17,17 +14,24 @@ body {
 .imgPage {
   width: 40%;
 }
+.imgOver {
+  width: 100%;
+  padding: 0;
+}
 .link {
   color: black;
 }
 .addcar {
-  background-color: rgb(6, 190, 246);
+  background-color: rgb(73, 148, 210);
   color: bluck;
   border: 2px black solid;
   width: 18%;
   text-align: center;
-  margin: 15px;
-  padding: 20px;
+  margin: 10px;
+  padding: 50px;
+}
+.plus {
+  font-size: xx-large;
 }
 
 .FooterWrapper {

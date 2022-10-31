@@ -6,7 +6,16 @@ function Overtrue() {
     localStorage.setItem("cars", JSON.stringify(data));
   }, []);
 
-  return <h1 className="header"> Welcome car rental center</h1>;
+  return (
+    <>
+      <h1 className="header"> Welcome car rental center</h1>;
+      <img
+        className="imgOver"
+        src="https://qph.cf2.quoracdn.net/main-qimg-f8dc46bfb506003ebc46c564809e386b-lq"
+        alt="overtrue"
+      />
+    </>
+  );
 }
 
 export default Overtrue;
