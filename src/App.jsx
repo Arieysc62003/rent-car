@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Cars from "./Pages/Cars";
 import CarPage from "./Pages/CarPage";
 import Overtrue from "./Pages/overtrue";
-import AddCar from "./Pages/AddCar";
+import EditCar from "./Pages/EditCar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route path="/Overtrue" element={<Overtrue />} />
           <Route path="/Cars" element={<Cars />} />
           <Route path="/CarPage/:id" element={<CarPage />} />
-          <Route path="/AddCar" element={<AddCar />} />
+          <Route path="/EditCar/:id" element={<EditCar />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Link } from "react-router-dom";
 import data from "../data/data";
 
-const CONTAINER = {
+const SCard = {
   color: "bluck",
   border: "2px black solid",
   width: "18%",
@@ -13,23 +13,28 @@ const CONTAINER = {
   paddingTop: "0",
 };
 
-const CardSingle = ({ car, removeCar }) => {
+const CardSingle = ({ car, removeCar, editCar }) => {
   const deleteId = (id) => {
     if (confirm("Are you sure want to delete this ad?") == false) {
       return;
     }
     removeCar(id);
   };
+  const editId = (id) => {
+    editCar(id);
+  };
 
   return (
-    <div style={CONTAINER}>
+    <div style={SCard}>
       <img src={car.img} alt="jeep" width="100%" height="50%" />
-      <p>{car.model}</p>
-      <p>{car.year}</p>
-      <p>{car.engine}</p>
-      <p>{car.pricePerDay}</p>
+      <p>{" model:" + car.model}</p>
+      <p>{"year:" + car.year}</p>
+      <p>{"engine:" + car.engine}</p>
+      <p>{"price per day: " + car.pricePerDay}</p>
       <br />
       <Link to={"/CarPage/" + car.id}>More details</Link>
+      <br />
+      <button onClick={() => editId(car.id)}>edit</button>
       <br />
       <button onClick={() => deleteId(car.id)}>delete</button>
     </div>
