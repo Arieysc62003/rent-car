@@ -16,6 +16,7 @@ body {
 }
 .imgOver {
   width: 100%;
+  height: auto;
   padding: 0;
 }
 .link {
@@ -36,16 +37,16 @@ body {
 
 .FooterWrapper {
   background-color: #333;
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
 .FooterContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 2.5rem;
-  margin-top: 1.5rem;
+  row-gap: 1.3rem;
+  margin-top: 0.7rem;
 }
 .FooterTitle {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 450;
   color: rgb(5, 141, 252);
 }
@@ -68,6 +69,10 @@ body {
   display: flex;
   justify-content: space-around;
   cursor: pointer;
+}
+.FooterCopyRight {
+  text-align: center;
+  color: #fff;
 }
 svg {
   fill: #fff;

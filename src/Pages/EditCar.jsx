@@ -9,6 +9,10 @@ const EditCar = () => {
     year: "",
     engine: "",
     pricePerDay: "",
+    gearbox: "",
+    color: "",
+    adaptedForDisabled: "",
+    phoneNumber: "",
   });
 
   const { id } = useParams();
@@ -96,6 +100,42 @@ const EditCar = () => {
           name="pricePerDay"
           onChange={handleChange}
           defaultValue={add.pricePerDay}
+        />
+        <br />
+        <br />
+        <label htmlFor="gearbox">Gearbox:</label>
+        <input
+          type="text"
+          name="gearbox"
+          onChange={handleChange}
+          defaultValue={add.gearbox}
+        />
+        <br />
+        <br />
+        <label htmlFor="color">Color:</label>
+        <input
+          type="text"
+          name="color"
+          onChange={handleChange}
+          defaultValue={add.color}
+        />
+        <br />
+        <br />
+        <label htmlFor="adaptedForDisabled">Adapted For Disabled:</label>
+        <input
+          type="text"
+          name="adaptedForDisabled"
+          onChange={handleChange}
+          defaultValue={add.adaptedForDisabled}
+        />
+        <br />
+        <br />
+        <label htmlFor="phoneNumber">Phone Number:</label>
+        <input
+          type="text"
+          name="phoneNumber"
+          onChange={handleChange}
+          defaultValue={add.phoneNumber}
         />
         <br />
         <br />

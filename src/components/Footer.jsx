@@ -39,6 +39,11 @@ const Footer = (props) => {
             </li>
           </ul>
         </div>
+        <p className="FooterCopyRight">
+          All rights reserved to the car rental center company - notice board:
+          cars for rent Do not use any content that appears in the car rental
+          center.
+        </p>
         <div className="SocialLinks">
           <BsFacebook></BsFacebook>
           <BsInstagram></BsInstagram>

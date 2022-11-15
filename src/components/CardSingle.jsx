@@ -27,10 +27,10 @@ const CardSingle = ({ car, removeCar, editCar }) => {
   return (
     <div style={SCard}>
       <img src={car.img} alt="jeep" width="100%" height="50%" />
-      <p>{" model:" + car.model}</p>
-      <p>{"year:" + car.year}</p>
-      <p>{"engine:" + car.engine}</p>
-      <p>{"price per day: " + car.pricePerDay}</p>
+      <p>{"Model: " + car.model}</p>
+      <p>{"Color: " + car.color}</p>
+      <p>{"Year: " + car.year}</p>
+      <p>{"Price per day: " + car.pricePerDay}</p>
       <br />
       <Link to={"/CarPage/" + car.id}>More details</Link>
       <br />

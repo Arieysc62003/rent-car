@@ -8,10 +8,10 @@ function Overtrue() {
 
   return (
     <>
-      <h1 className="header"> Welcome car rental center</h1>;
+      <h1 className="header"> Welcome car rental center</h1>
       <img
         className="imgOver"
-        src="https://qph.cf2.quoracdn.net/main-qimg-f8dc46bfb506003ebc46c564809e386b-lq"
+        src="https://www.webintravel.com/wp-content/uploads/2019/12/car-rental-sefa-ozel-GettyImages.jpg"
         alt="overtrue"
       />
     </>

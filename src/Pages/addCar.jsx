@@ -10,6 +10,10 @@ const AddCar = () => {
     year: "",
     engine: "",
     pricePerDay: "",
+    gearbox: "",
+    color: "",
+    adaptedForDisabled: "",
+    phoneNumber: "",
   });
 
   const handleChange = (e) => {
@@ -77,6 +81,42 @@ const AddCar = () => {
           name="pricePerDay"
           onChange={handleChange}
           alue={addC.pricePerDay}
+        />
+        <br />
+        <br />
+        <label htmlFor="gearbox">Gearbox:</label>
+        <input
+          type="text"
+          name="gearbox"
+          onChange={handleChange}
+          defaultValue={addC.gearbox}
+        />
+        <br />
+        <br />
+        <label htmlFor="color">Color:</label>
+        <input
+          type="text"
+          name="color"
+          onChange={handleChange}
+          defaultValue={addC.color}
+        />
+        <br />
+        <br />
+        <label htmlFor="adaptedForDisabled">Adapted For Disabled:</label>
+        <input
+          type="text"
+          name="adaptedForDisabled"
+          onChange={handleChange}
+          defaultValue={addC.adaptedForDisabled}
+        />
+        <br />
+        <br />
+        <label htmlFor="phoneNumber">Phone Number:</label>
+        <input
+          type="text"
+          name="phoneNumber"
+          onChange={handleChange}
+          defaultValue={addC.phoneNumber}
         />
         <br />
         <br />

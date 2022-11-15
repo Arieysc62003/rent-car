@@ -31,10 +31,23 @@ const CarPage = () => {
           width="100%"
           height="50%"
         />
-        <h1>{" model: " + findID.model}</h1>
-        <p style={section}>{"year: " + findID.year}</p>
-        <p style={section}>{"engine: " + findID.engine}</p>
-        <p style={section}>{"price per day: " + findID.pricePerDay}</p>
+        <h1>{"Model: " + findID.model}</h1>
+        <br />
+        <p style={section}>{"Year: " + findID.year}</p>
+        <br />
+        <p style={section}>{"Color: " + findID.color}</p>
+        <br />
+        <p style={section}>{"Price per day: " + findID.pricePerDay}</p>
+        <br />
+        <p style={section}>{"Engine: " + findID.engine}</p>
+        <br />
+        <p style={section}>{"Gearbox: " + findID.gearbox}</p>
+        <br />
+        <p style={section}>{"Phone number: " + findID.phoneNumber}</p>
+        <br />
+        <p style={section}>
+          {"Adapted for disabled: " + findID.adaptedForDisabled}
+        </p>
       </div>
     </for>
   );
