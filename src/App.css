@@ -15,6 +15,7 @@ body {
   width: 40%;
 }
 .imgOver {
+  display: block;
   width: 100%;
   height: auto;
   padding: 0;
@@ -50,20 +51,15 @@ body {
   font-weight: 450;
   color: rgb(5, 141, 252);
 }
-.FooterLinkTitle {
-  color: rgb(73, 148, 210);
-  font-size: 1.4rem;
-  font-weight: 450;
-}
 
 .FooterLinks {
   margin-top: 1rem;
 }
 .FooterLink {
-  font-size: 1.2rem;
-  color: #fff;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 500;
   transition: 0.3s;
+  color: rgb(70, 117, 226);
 }
 .SocialLinks {
   display: flex;
@@ -71,7 +67,7 @@ body {
   cursor: pointer;
 }
 .FooterCopyRight {
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 svg {
